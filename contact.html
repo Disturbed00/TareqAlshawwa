@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <a href="index.html"
+          ><img class="logo" id="logo" src="./images/logo.png" alt="Logo"
+        /></a>
+        <ul>
+          <li><a href="./about_me.html">About</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="contact-main-content">
+        <div class="contact-info">
+          <h1 class="about-me-header">Contact me</h1>
+          <p>
+            I am interested in taking an internship as a front-end web
+            developer. However, if you have any questions then feel free to ask!
+          </p>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xleqylgy"
+            method="post"
+          >
+            <div class="name-email-form-group">
+              <div class="form-input">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-input">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="E-mail"
+                />
+              </div>
+            </div>
+            <div class="message-form">
+              <textarea
+                name="message"
+                id="message"
+                required
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <button type="submit" class="styled-button">
+              <span></span>Submit
+            </button>
+          </form>
+        </div>
+        <div class="contact-image">
+          <div class="info-container">
+            <p>Tareq Alshawwa.</p>
+            <p>86199 Augsburg</p>
+            <p><span style="color: aqua">@</span>:tarek-wasim@hotmail.com</p>
+          </div>
+          <img src="./images/map3.png" alt="map" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

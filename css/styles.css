@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond", serif;
+}
+
+input {
+  padding: 0.7rem;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 12rem;
+  height: auto;
+  box-sizing: content-box;
+  cursor: pointer;
+  margin: 1rem 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: black;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  font-size: 22px;
+}
+
+.navbar ul {
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.main-content {
+  width: 85%;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.main-content h1,
+.main-content p {
+  margin: 1rem 0;
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.main-content p {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.6;
+  max-width: 800px;
+  text-align: left;
+  color: black;
+}
+
+button.styled-button {
+  width: 300px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+button.styled-button span {
+  background: black;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button.styled-button:hover span {
+  width: 100%;
+}
+
+button.styled-button:hover {
+  border: none;
+  color: white;
+}
+
+/* Contact Page Specific Styles */
+.contact-main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 85%;
+  margin: 2rem auto;
+  box-sizing: content-box;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-info h1,
+.contact-info p {
+  margin: 1rem 0;
+}
+
+.contact-info h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.6;
+  color: black;
+}
+
+.contact-image {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 30px;
+  border-radius: 5px;
+  color: white;
+}
+
+.info-container p {
+  line-height: 1.5;
+}
+
+.name-email-form-group {
+  display: flex;
+  align-items: center;
+}
+
+.name-email-form-group .form-input {
+  margin-right: 0rem;
+  width: 100%;
+  height: 100%;
+}
+
+.name-email-form-group .form-input:last-child {
+  margin-right: 0;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  box-sizing: content-box;
+}
+
+.message-form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin-top: 0px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.name-email-form-group .form-input input,
+.message-form textarea {
+  width: calc(100% - 50px);
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  height: 400px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  margin-bottom: 1.2rem;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-card a:hover {
+  background-color: lightslategray;
+}
+
+.github-link-button {
+  width: 150px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.github-link-button span {
+  background: black;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.github-link-button:hover span {
+  width: 100%;
+}
+
+.github-link-button:hover {
+  border: none;
+  color: white;
+}
